@@ -18,7 +18,7 @@ class App extends Component {
     );
   };
   componentDidMount() {
-    fetch("http://dtcdashboard.pythonanywhere.com/api/v1/employee/")
+    fetch("https://dtcdashboard.pythonanywhere.com/api/v1/employee/")
       .then((res) => res.json())
       .then((employee) => this.setState({ employees: employee }));
   }
